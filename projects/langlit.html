@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>foodConnect - Overview</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+
+    <style>
+        #video-section {
+            text-align: center;
+        }
+
+        #video-section video {
+            width: 80%;
+            max-width: 1000px;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        /* .mySlides {
+            display: none;
+        } */
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .prev,
+        .next {
+            /* cursor: pointer;
+            position: absolute; */
+            top: 50%;
+            /* width: auto; */
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Adjust image size */
+        .mySlides img {
+            width: 150px;
+            height: auto; /* Adjust the width as needed */
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">fitmATE</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Go Back</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h3>Overview</h3>
+                    <p>
+                        KK Women’s and Children’s Hospital (KKH) has a Caregivers Grant Training (CGT) workshop available as one of their services. A doctor is to refer the caregiver for the workshop and arrange a date for them to attend. The workshop is done physically and its purpose is to equip the caregivers with the necessary knowledge and skills to better care for their child.
+                        After the workshop, caregivers are to apply what they’ve learnt at home, practising it with their child until the intervention. It is during this period where caregivers cannot retain the information and skills that were taught during the workshop due to the long waiting time between the workshops.
+
+
+                    </p>
+
+
+                </div>
+                <div class="details-container">
+                    <h3>Solution</h3>
+                    <p>
+                        To make an application that will help support the caregivers in applying the language strategies they’ve learnt from the workshop along with their child. Moreover, children who are 4 and above will additionally learn and practice their selected literacy skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h3>Tools Used</h3>
+                    <p>Articulate Storyline, JavaScript, PHP, phpmyAdmin</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="../assets/pebble1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../assets/pebble2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../assets/pebble3.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../assets/pebble4.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../assets/pebble5.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../assets/pebble6.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../assets/pebble7.png" style="width:100%">
+            </div>
+
+            <!-- Repeat for the rest of the images -->
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+
+            <!-- Repeat for the rest of the images -->
+        </div>
+
+    </section>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
