@@ -5,98 +5,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>foodConnect - Overview</title>
+    <title>foodConnect</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../mediaqueries.css" />
 
     <style>
-        #video-section {
-            text-align: center;
+               .video-section {
+            max-width: 1000px; /* Adjust the maximum width as needed */
+            margin: 0 auto; /* Center the div horizontally */
+            padding: 20px; /* Add padding for spacing */
         }
 
-        #video-section video {
-            width: 80%;
-            max-width: 1000px;
-            height: auto;
-            margin: 20px auto;
+        video {
+            width: 100%; /* Make the video fill the width of its container */
         }
-
-        /* .mySlides {
-            display: none;
-        } */
-
-        .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-
-        @keyframes fade {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        .prev,
-        .next {
-            /* cursor: pointer;
-            position: absolute; */
-            top: 50%;
-            /* width: auto; */
-            margin-top: -22px;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active,
-        .dot:hover {
-            background-color: #717171;
-        }
-
-        /* Adjust image size */
-        .mySlides img {
-            width: 150px;
-            height: auto; /* Adjust the width as needed */
-        }
-
-        .slideshow-container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+       
     </style>
 </head>
 
 <body>
     <nav id="desktop-nav">
-        <div class="logo">fitmATE</div>
+        <div class="logo">foodConnect</div>
         <div>
             <ul class="nav-links">
                 <li><a href="../index.html">Go Back</a></li>
@@ -109,18 +38,19 @@
                 <div class="details-container">
                     <h3>Overview</h3>
                     <p>
-                        KK Women’s and Children’s Hospital (KKH) has a Caregivers Grant Training (CGT) workshop available as one of their services. A doctor is to refer the caregiver for the workshop and arrange a date for them to attend. The workshop is done physically and its purpose is to equip the caregivers with the necessary knowledge and skills to better care for their child.
-                        After the workshop, caregivers are to apply what they’ve learnt at home, practising it with their child until the intervention. It is during this period where caregivers cannot retain the information and skills that were taught during the workshop due to the long waiting time between the workshops.
-
-
+                        Food Waste Reduction Platform that leverages cloud-based containers and Kubernetes. Our platform will facilitate the efficient tracking and redistribution of surplus food items. There will also be a feature to match supermarkets with surplus food nearing expiration with organizations in need, promoting a sustainable and community-driven approach to reducing food wastage.
                     </p>
-
-
+                </div>
+                <div class="details-container">
+                    <h3>Problem</h3>
+                    <p>
+                        The global problem of food wastage has significant environmental and social consequences. Our motivation stems from the urgency to tackle this issue with a seamless, technology-driven solution. By bridging the gap between surplus food providers and organizations in need, we aspire to contribute to a more sustainable future. 
+                    </p>
                 </div>
                 <div class="details-container">
                     <h3>Solution</h3>
                     <p>
-                        To make an application that will help support the caregivers in applying the language strategies they’ve learnt from the workshop along with their child. Moreover, children who are 4 and above will additionally learn and practice their selected literacy skills.
+                        Efficient Matching Algorithm, Real-time Tracking and Notifications, User-Friendly Interface, Logistics and Distribution Management, Data Analytics for Waste Reduction, Privacy and Security.
                     </p>
                 </div>
             </div>
@@ -129,58 +59,25 @@
             <div class="about-containers">
                 <div class="details-container">
                     <h3>Tools Used</h3>
-                    <p>Articulate Storyline, JavaScript, PHP, phpmyAdmin</p>
+                    <p>Kubernetes, MySQL, Flask</p>
                 </div>
+                    <div class="details-container">
+                        <h3>My Role</h3>
+                        <p>Frontend, Location finding, Database Setup</p>
+                    </div>
             </div>
+
+          
         </div>
 
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="../assets/pebble1.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="../assets/pebble2.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="../assets/pebble3.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="../assets/pebble4.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="../assets/pebble5.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="../assets/pebble6.png" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="../assets/pebble7.png" style="width:100%">
-            </div>
-
-            <!-- Repeat for the rest of the images -->
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="video-section">
+            <video width="100%" controls>
+                <source src="../videos/GRP20_CLOUD_VIDEO.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
+        
         <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-
-            <!-- Repeat for the rest of the images -->
-        </div>
 
     </section>
 

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fitmATE</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+
+    <style>
+               .video-section {
+            max-width: 1000px; /* Adjust the maximum width as needed */
+            margin: 0 auto; /* Center the div horizontally */
+            padding: 20px; /* Add padding for spacing */
+        }
+
+        video {
+            width: 100%; /* Make the video fill the width of its container */
+        }
+       
+    </style>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">fitmATE</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Go Back</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="about-details-container">
+            <div class="about-containers">
+                <!-- <div class="details-container">
+                    <h3>Overview</h3>
+                    <p>
+                        Food Waste Reduction Platform that leverages cloud-based containers and Kubernetes. Our platform will facilitate the efficient tracking and redistribution of surplus food items. There will also be a feature to match supermarkets with surplus food nearing expiration with organizations in need, promoting a sustainable and community-driven approach to reducing food wastage.
+                    </p>
+                </div> -->
+                <div class="details-container">
+                    <h3>Problem</h3>
+                    <p>
+                        In Singapore, busy lifestyles, limited nutritional knowledge, and easy access to unhealthy food make it challenging for people to maintain a healthy diet, impacting their well-being. A comprehensive health and nutrition tracker application is urgently needed to address these challenges and promote a healthier lifestyle in Singapore.
+                    </p>
+                </div>
+                <div class="details-container">
+                    <h3>Solution</h3>
+                    <p>
+                        The health app in Singapore benefits individuals by offering a user-friendly platform to track food intake and make informed decisions using a nutritional database. It analyzes calories and macronutrients, providing valuable insights. Personalized goals and recommendations promote sustainable lifestyle changes and physical activity. The app empowers users to monitor progress, make informed choices, and improve health outcomes, fostering a culture of healthy living in Singapore.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h3>Tools Used</h3>
+                    <p>MySQL, MongoDB, Flask, Python</p>
+                </div>
+                    <div class="details-container">
+                        <h3>My Role</h3>
+                        <p>Frontend, Database Management, Forms</p>
+                    </div>
+            </div>
+
+          
+        </div>
+
+        <div class="video-section">
+            <video width="100%" controls>
+                <source src="../videos/database_grp23_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <br>
+
+    </section>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>

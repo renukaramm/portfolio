@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smile Clinic</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+
+    <style>
+        .video-section {
+            max-width: 1000px;
+            margin: 0 auto; /* Center the div horizontally */
+            padding: 20px; /* Add padding for spacing */
+            margin-left: 450px;
+        }
+
+        video {
+            width: 100%;
+            height: 500px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Smile Clinic</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Go Back</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h3>Overview</h3>
+                    <p>
+                        Develop a website are for browsing through services offered at dental care and also booking and canceling appointments for users who can register to create their own account.
+                    </p>
+                </div>
+                <!-- <div class="details-container">
+                    <h3>Problem</h3>
+                    <p>
+                        The global problem of food wastage has significant environmental and social consequences. Our motivation stems from the urgency to tackle this issue with a seamless, technology-driven solution. By bridging the gap between surplus food providers and organizations in need, we aspire to contribute to a more sustainable future. 
+                    </p>
+                </div>
+                <div class="details-container">
+                    <h3>Solution</h3>
+                    <p>
+                        Efficient Matching Algorithm, Real-time Tracking and Notifications, User-Friendly Interface, Logistics and Distribution Management, Data Analytics for Waste Reduction, Privacy and Security.
+                    </p>
+                </div> -->
+            </div>
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h3>Tools Used</h3>
+                    <p>
+                        Brackets, Wamp Server, and Adobe Illustrator.
+                    </p>
+                </div>
+                    <div class="details-container">
+                        <h3>Languages</h3>
+                        <p>PHP, HTML, SQL, CSS, and Javascript</p>
+                    </div>
+            </div>
+
+          
+        </div>
+
+        <div class="video-section">
+            <img src="../assets/smile.png" alt="Image description">
+
+        </div>
+        
+        <br>
+
+    </section>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>

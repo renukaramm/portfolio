@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Structure & Algorithm</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+
+    <style>
+        .video-section {
+            max-width: 900px; /* Adjust the maximum width as needed */
+            margin: 0 auto; /* Center the div horizontally */
+            padding: 20px; /* Add padding for spacing */
+        }
+
+        video {
+            width: 100%;
+            height: 500px;
+/* Make the video fill the width of its container */
+        }
+       
+    </style>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Data Structure & Algorithm</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Go Back</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h3>Overview</h3>
+                    <p>
+                        Develop a platform where user can calculate nearest bus stop based on user location, fidn the shortest path of travel as well as location findings.
+                    </p>
+                </div>
+                <!-- <div class="details-container">
+                    <h3>Problem</h3>
+                    <p>
+                        The global problem of food wastage has significant environmental and social consequences. Our motivation stems from the urgency to tackle this issue with a seamless, technology-driven solution. By bridging the gap between surplus food providers and organizations in need, we aspire to contribute to a more sustainable future. 
+                    </p>
+                </div>
+                <div class="details-container">
+                    <h3>Solution</h3>
+                    <p>
+                        Efficient Matching Algorithm, Real-time Tracking and Notifications, User-Friendly Interface, Logistics and Distribution Management, Data Analytics for Waste Reduction, Privacy and Security.
+                    </p>
+                </div> -->
+            </div>
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h3>Tools Used</h3>
+                    <p>PyQT5, Folium Module (Map module used to show routes and markers)
+                        , PyCharm, Mapbox API (Returns coordinate along the routes),
+                        Geopy.Geocoder (Translate locations in to latitude and longitude)
+                        </p>
+                </div>
+                    <div class="details-container">
+                        <h3>My Role</h3>
+                        <p>Frontend, Location Finding</p>
+                    </div>
+            </div>
+
+          
+        </div>
+
+        <div class="video-section">
+            <video width="100%" controls>
+                <source src="../videos//DSA Demo - 1680448749624.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <br>
+
+    </section>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
